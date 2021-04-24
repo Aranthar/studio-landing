@@ -1,0 +1,107 @@
+.section--reviews
+    .slider__reviews
+      display: flex
+
+      cursor: grab
+
+      *
+        outline: none
+
+      .review
+        display: flex
+        flex-direction: column
+        flex: 33.33333%
+
+        &:not(:last-child)
+          margin-right: 45px
+          
+
+        &__img
+          width: 490px
+          height: 490px
+
+          margin-bottom: 30px
+
+          img
+            object-fit: cover
+            object-position: center
+
+        &__data
+          display: flex
+          justify-content: space-between
+          align-items: center
+
+          margin-bottom: 50px
+
+          .data__name
+            text-transform: uppercase
+
+          .data__rating
+            i
+              color: darken(#fff, 25%)
+
+              cursor: pointer
+              transition: color .2s
+
+              &:not(:last-child)
+                margin-right: 3px
+
+              &.active
+                color: #ff3c2d
+
+
+        &__comment
+          padding: 0px 40px
+
+          font-size: 18px
+          font-style: italic
+
+          position: relative
+
+          &::before
+            content: ''
+
+            position: absolute
+            left: 0
+            top: -20px
+
+            width: 65px
+            height: 55px
+
+            background-image: url('../img/quote.png')
+            background-size: 100%
+            background-position: center
+            background-repeat: no-repeat
+    
+    .slick-dots
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+
+      margin-top: 50px
+      
+      li
+        .dot
+          width: 10px
+          height: 10px
+
+          border-radius: 50%
+
+          background-color: #cfcfcf
+
+          cursor: pointer
+
+          transition: background-color .2s
+
+          &:hover
+            background-color: darken(#cfcfcf, 15%)
+
+        &.slick-active
+          .dot
+            background-color: transparent
+
+            border: 2px solid #ff3c2d
+
+        &:not(:last-child)
+          margin-right: 20px

@@ -1,0 +1,79 @@
+.header
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  padding: 25px 100px 
+
+  &__logo
+    display: flex
+    align-items: center
+
+  &__nav
+    margin-left: 150px
+
+    .nav__menu
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      .menu__item
+        position: relative
+
+        font-weight: 500
+
+        text-transform: capitalize
+
+        &:hover
+          &::before
+            width: 100%
+
+            opacity: 1
+
+        &:not(:last-child)
+          margin-right: 40px
+
+        &::before
+          position: absolute
+
+          content: ''
+
+          bottom: -3px
+          left: 0
+
+          width: 0%
+          height: 2px
+
+          background-color: $color--red
+          
+          opacity: 0
+
+          transition: all .3s
+            
+        a
+          color: $color--text
+        
+  .button
+    margin: 0 70px 0 auto
+
+  &__icons
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    .icon
+      transition: transform .3s, color .3s
+
+      font-size: 20px
+
+      &:hover
+        transform: scale(1.1)
+        a
+          color: $color--red
+
+      &:not(:last-child)
+          margin-right: 20px
+          
+
+      a
+        transition: color.3s

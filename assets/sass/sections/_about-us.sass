@@ -1,0 +1,42 @@
+.section--about-us
+  background-image: url(../img/about-us.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  position: relative
+
+  padding: 140px 0
+
+  z-index: 1
+  
+  &::before
+    content: ''
+
+    position: absolute
+    top: 20px
+    left: 15px
+    right: 15px
+    bottom: 20px
+
+    border: 2px solid rgba(255, 255, 255, .15)
+
+    z-index: -1
+
+  .about-us__info
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    color: #fff
+
+    p
+      font-size: 50px
+      font-weight: 600
+
+      max-width: 820px
+
+    .button
+      padding: 8px 70px
+      font-size: 18px

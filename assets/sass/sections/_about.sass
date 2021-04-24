@@ -1,0 +1,127 @@
+.section--about
+  background-color: #f6f6f6
+
+  padding: 80px 0 100px
+
+  .about
+    display: flex
+    flex-direction: column
+
+    &__top
+      display: flex
+      flex-direction: row
+
+    &__answer
+      position: relative
+
+      flex: 50%
+
+      padding-right: 180px
+
+      .answer__title
+        font-size: 50px
+        font-weight: 600
+
+        line-height: 1.1
+
+        margin-bottom: 35px
+
+      .answer__text
+        font-size: 18px
+        font-weight: 400
+
+        line-height: 1.9
+
+      .answer__arrow
+        position: absolute
+
+        bottom: -45px
+        left: 0
+
+    &__info
+      flex: 50%
+
+      padding-left: 40px
+
+      .info__title
+        margin-bottom: 65px
+
+      .info__desc
+        display: flex
+        flex-direction: row
+
+      .desc__items1, desc__items2
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+      .desc__items1
+        margin-right: 100px
+
+      .desc__item
+        display: flex
+        align-items: center
+
+        padding-bottom: 15px
+
+        border-bottom: 1px solid #ccc
+
+        min-height: 75px
+
+        a
+          display: flex
+          align-items: center
+
+          font-weight: 400
+
+          img
+            margin-right: 25px
+            object-fit: contain
+
+          p
+            text-align: center
+            
+            margin: 0
+
+        &:not(:last-child)
+          margin-bottom: 35px
+
+    &__bottom
+      max-width: 1060px
+      width: 100%
+
+      display: flex
+      justify-content: flex-start
+
+      margin-left: 115px
+      
+      .about__description
+        background-color: #222
+        color: #fff
+
+        padding: 55px 80px 70px 75px
+            
+        .description__title
+          font-size: 22px
+          font-weight: 600
+
+          text-transform: uppercase
+
+          line-height: 1
+
+          margin-bottom: 50px
+
+        p
+          line-height: 1.5
+
+          margin: 0
+
+          font-size: 18px
+          font-weight: 300
+
+          &:not(:last-child)
+            margin-bottom: 50px
+
+          span
+            border-bottom: 1px solid $color--red
+            
